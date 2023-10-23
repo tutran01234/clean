@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <div
+      {/* <div
         id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
       >
@@ -19,7 +19,7 @@ const Header = () => {
         >
           <span class="sr-only">Loading...</span>
         </div>
-      </div>
+      </div> */}
 
       <div
         class="container-fluid bg-light p-0 wow fadeIn"
@@ -78,13 +78,13 @@ const Header = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <Link to="index.html" class="nav-item nav-link active">
+            <Link to="/" class="nav-item nav-link active">
               Trang chủ
             </Link>
-            <Link to="service.html" class="nav-item nav-link">
+            <Link to="/blog" class="nav-item nav-link">
               Blog
             </Link>
-            <Link to="service.html" class="nav-item nav-link">
+            <Link to="/price" class="nav-item nav-link">
               Bảng giá
             </Link>
             <div class="nav-item dropdown">
@@ -96,10 +96,10 @@ const Header = () => {
                 Gói dịch vụ
               </Link>
               <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                <Link to="combo1.html" class="dropdown-item">
+                <Link to="combo1" class="dropdown-item">
                   Dọn dẹp nhà{" "}
                 </Link>
-                <Link to="team.html" class="dropdown-item">
+                {/* <Link to="team.html" class="dropdown-item">
                   Dọn dẹp nhà (gói cố định)
                 </Link>
                 <Link to="appointment.html" class="dropdown-item">
@@ -107,11 +107,11 @@ const Header = () => {
                 </Link>
                 <Link to="testimonial.html" class="dropdown-item">
                   Vệ sinh tủ lạnh
-                </Link>
-                <Link to="combo2.html" class="dropdown-item">
+                </Link> */}
+                <Link to="combo2" class="dropdown-item">
                   Giặt giũ
                 </Link>
-                <Link to="404.html" class="dropdown-item">
+                {/* <Link to="404.html" class="dropdown-item">
                   Vệ sinh sofa
                 </Link>
                 <Link to="404.html" class="dropdown-item">
@@ -119,13 +119,16 @@ const Header = () => {
                 </Link>
                 <Link to="404.html" class="dropdown-item">
                   Vệ sinh rèm
-                </Link>
-                <Link to="404.html" class="dropdown-item">
+                </Link> */}
+                {/* <Link to="404.html" class="dropdown-item">
                   Vệ sinh máy giặt
-                </Link>
+                </Link> */}
               </div>
             </div>
-            <Link to="contact.html" class="nav-item nav-link">
+            <Link to="/about" class="nav-item nav-link">
+              Về chúng tôi
+            </Link>
+            <Link to="contract" class="nav-item nav-link">
               Liên hệ
             </Link>
           </div>

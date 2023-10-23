@@ -7,8 +7,6 @@ import FeedBackSlider from "../component/home/feedBackSlider";
 const Home = () => {
   return (
     <>
-      <Header />
-
       <BannerSlider />
 
       <div class="container-xxl py-5">
@@ -411,7 +409,6 @@ const Home = () => {
             </div>
           </div>
           <FeedBackSlider />
-          <Footer />
 
           <a
             href="#"
