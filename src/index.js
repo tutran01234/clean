@@ -10,6 +10,8 @@ import Combo1 from "./home/combo1";
 import Combo2 from "./home/combo2";
 import Booking1 from "./home/booking1";
 import Booking2 from "./home/booking2";
+import Login from "./home/login";
+import Register from "./home/register";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -24,6 +26,8 @@ root.render(
           <Route path="about" element={<About />} />
           <Route path="combo1" element={<Combo1 />} />
           <Route path="combo2" element={<Combo2 />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
         </Route>
       </Routes>
     </BrowserRouter>

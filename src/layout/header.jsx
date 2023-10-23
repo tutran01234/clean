@@ -46,9 +46,20 @@ const Header = () => {
               <small class="fa fa-phone-alt text-primary me-2"></small>
               <small>+012 345 6789</small>
             </div>
-            <div class="h-100 d-inline-flex align-items-center">
-              <Link class="text-primary me-1" to="login.html">
-                Sign in/Sign up
+            <div
+              class="h-100 d-inline-flex align-items-center"
+              style={{ cursor: "pointer" }}
+            >
+              <Link
+                class="text-primary me-1"
+                to="login"
+                style={{ cursor: "pointer" }}
+              >
+                Sign in
+              </Link>
+              {" /  "}
+              <Link class="text-primary me-1" to="register">
+                Sign up
               </Link>
             </div>
           </div>
@@ -60,7 +71,7 @@ const Header = () => {
         data-wow-delay="0.1s"
       >
         <Link
-          to="index.html"
+          to="/"
           class="navbar-brand d-flex align-items-center px-4 px-lg-5"
         >
           <img
