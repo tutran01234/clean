@@ -13,11 +13,15 @@ import Booking2 from "./home/booking2";
 import Login from "./home/login";
 import Register from "./home/register";
 import Admin from "./admin/admin";
+import Manager from "./home/manage.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/manager" element={<Manager />} />
+
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="blog" element={<Blog />} />
@@ -29,7 +33,6 @@ root.render(
           <Route path="combo2" element={<Combo2 />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
-          <Route path="admin" element={<Admin />} />
         </Route>
       </Routes>
     </BrowserRouter>

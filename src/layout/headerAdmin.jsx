@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const HeaderAdmin = (props) => {
   const { handleActiveTab } = props;
+  const [isTab, setTab] = useState("list");
   return (
     <>
       <header>
@@ -18,12 +19,21 @@ const HeaderAdmin = (props) => {
           class="collapse d-lg-block sidebar collapse bg-white"
         >
           <div class="position-sticky">
-            <div class="list-group list-group-flush mx-3 mt-4">
+            <div class="list-group list-group-flush mx-0 mt-4">
               <div
                 onClick={() => {
                   handleActiveTab(true);
+                  setTab("list");
                 }}
                 class="list-group-item list-group-item-action py-2 ripple"
+                style={
+                  isTab === "list"
+                    ? {
+                        backgroundColor: "#f2d790",
+                        borderLeft: "3px solid #fa8f43",
+                      }
+                    : {}
+                }
                 aria-current="true"
               >
                 <i class="fa fa-sharp fa-light fa-table me-3"></i>
@@ -33,7 +43,16 @@ const HeaderAdmin = (props) => {
               <div
                 onClick={() => {
                   handleActiveTab(false);
+                  setTab("create");
                 }}
+                style={
+                  isTab === "create"
+                    ? {
+                        backgroundColor: "#f2d790",
+                        borderLeft: "3px solid #fa8f43",
+                      }
+                    : {}
+                }
                 class="list-group-item list-group-item-action py-2 ripple"
                 aria-current="true"
               >

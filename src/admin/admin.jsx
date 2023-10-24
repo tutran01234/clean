@@ -13,7 +13,7 @@ const Admin = () => {
     <>
       <div className="admin" style={{ position: "relative", height: "100%" }}>
         <div style={{ display: "flex" }}>
-          <div style={{ width: "250px" }}></div>
+          <div style={{ width: "231px" }}></div>
           <HeaderAdmin handleActiveTab={handleActiveTab} />
 
           <main
@@ -23,8 +23,8 @@ const Admin = () => {
               borderLeft: "1px solid gray",
             }}
           >
-            <div style={{ height: "90px" }}></div>
-            <div className="container pt-4" style={{ width: "85%" }}>
+            <div style={{ height: "80px" }}></div>
+            <div className="container pt-4" style={{ width: "100%" }}>
               {isTab ? <ListUser /> : <CreateUser />}
             </div>
             <div style={{ height: "150px" }}></div>

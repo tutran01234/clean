@@ -10,7 +10,7 @@ const CreateUser = () => {
               <div className="card">
                 <div className="card-header d-flex justify-content-between">
                   <div className="header-title">
-                    <h4 className="card-title">Thêm tài khoản</h4>
+                    <h4 className="card-title">Sửa tài khoản</h4>
                   </div>
                 </div>
                 <div className="card-body">
@@ -69,22 +69,29 @@ const CreateUser = () => {
                     <form>
                       <div className="row">
                         <div className="form-group col-md-6">
-                          <label for="username">Họ:</label>
+                          <label for="username">Họ và tên:</label>
                           <input
                             type="text"
                             className="form-control"
                             id="fname"
-                            placeholder="First Name"
+                            placeholder="Họ và tên"
                           />
                         </div>
                         <div className="form-group col-md-6">
-                          <label for="lname">Tên:</label>
+                          <label for="lname">Ngày sinh:</label>
                           <input
+                            type="date"
+                            data-provide="datepicker"
+                            className="form-control"
+                            id="lname"
+                            placeholder="Ngày sinh"
+                          />
+                          {/* <input
                             type="text"
                             className="form-control"
                             id="lname"
                             placeholder="Last Name"
-                          />
+                          /> */}
                         </div>
                         <div className="form-group col-md-6">
                           <label for="add1">Địa chỉ:</label>
@@ -132,7 +139,7 @@ const CreateUser = () => {
                       <hr />
                       <h5 className="mb-3">Tài khoản</h5>
                       <div className="row">
-                        <div className="form-group col-md-12">
+                        {/* <div className="form-group col-md-12">
                           <label for="unamer">Tên tài khoản:</label>
                           <input
                             type="text"
@@ -140,7 +147,7 @@ const CreateUser = () => {
                             id="unamer"
                             placeholder="Tên tài khoản"
                           />
-                        </div>
+                        </div> */}
                         <div className="form-group col-md-6">
                           <label for="pass">Mật khẩu:</label>
                           <input
