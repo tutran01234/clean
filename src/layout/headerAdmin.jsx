@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const HeaderAdmin = (props) => {
   const { handleActiveTab } = props;
@@ -80,15 +81,22 @@ const HeaderAdmin = (props) => {
               <i class="fas fa-bars"></i>
             </button>
 
-            <a class="navbar-brand" href="index.html">
+            <Link class="navbar-brand" to="/">
               <img
+                style={{ marginTop: "10px" }}
                 src="img/Brown Gradient Dreamy Abstract Font Album Cover (1).png"
                 height="40"
                 alt="MDB Logo"
                 loading="lazy"
               />
-            </a>
-            <div class="d-flex align-items-center">
+            </Link>
+            <div
+              style={{
+                width: "450px",
+                justifyContent: "space-between",
+                display: "flex",
+              }}
+            >
               <button
                 class="navbar-toggler"
                 type="button"
@@ -99,8 +107,19 @@ const HeaderAdmin = (props) => {
               >
                 <i class="ri-menu-3-line"></i>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto navbar-list align-items-center">
+              <div
+                class="collapse navbar-collapse"
+                id="navbarSupportedContent"
+                style={{ width: "100%" }}
+              >
+                <ul
+                  class="navbar-nav ml-auto navbar-list align-items-center"
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "100%",
+                  }}
+                >
                   <li>
                     <div class="iq-search-bar device-search">
                       <form action="#" class="searchbox">

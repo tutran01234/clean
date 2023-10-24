@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -22,65 +23,64 @@ const Footer = () => {
                 <i class="fa fa-envelope me-3"></i>info@example.com
               </p>
               <div class="d-flex pt-2">
-                <a
+                <Link
                   class="btn btn-outline-light btn-social rounded-circle"
-                  href=""
+                  to="/"
                 >
                   <i class="fab fa-twitter"></i>
-                </a>
-                <a
+                </Link>
+                <Link
                   class="btn btn-outline-light btn-social rounded-circle"
-                  href=""
+                  to="/"
                 >
                   <i class="fab fa-facebook-f"></i>
-                </a>
-                <a
+                </Link>
+                <Link
                   class="btn btn-outline-light btn-social rounded-circle"
-                  href=""
+                  to="/"
                 >
                   <i class="fab fa-youtube"></i>
-                </a>
-                <a
+                </Link>
+                <Link
                   class="btn btn-outline-light btn-social rounded-circle"
-                  href=""
+                  to="/"
                 >
                   <i class="fab fa-linkedin-in"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <h5 class="text-light mb-4">Gói dịch vụ</h5>
-              <a class="btn btn-link" href=""></a>
-              <a class="btn btn-link" href="">
-                Lau nhà
-              </a>
-              <a class="btn btn-link" href="">
+              <Link class="btn btn-link" to="/combo1">
+                Dọn dẹp nhà
+              </Link>
+              <Link class="btn btn-link" to="/">
                 Nấu ăn
-              </a>
-              <a class="btn btn-link" href="">
+              </Link>
+              <Link class="btn btn-link" to="/combo2">
                 Giặt giũ
-              </a>
-              <a class="btn btn-link" href="">
+              </Link>
+              <Link class="btn btn-link" to="/">
                 Vệ sinh nhà tắm
-              </a>
+              </Link>
             </div>
             <div class="col-lg-3 col-md-6">
               <h5 class="text-light mb-4">Truy cập nhanh</h5>
-              <a class="btn btn-link" href="">
+              <Link class="btn btn-link" to="/about">
                 Về chúng tôi
-              </a>
-              <a class="btn btn-link" href="">
+              </Link>
+              <Link class="btn btn-link" to="/">
                 Liên hệ
-              </a>
-              <a class="btn btn-link" href="">
+              </Link>
+              <Link class="btn btn-link" to="/">
                 Gói dịch vụ
-              </a>
-              <a class="btn btn-link" href="">
+              </Link>
+              <Link class="btn btn-link" to="/">
                 Quyền lợi & Điều khoản
-              </a>
-              <a class="btn btn-link" href="">
+              </Link>
+              <Link class="btn btn-link" to="/">
                 Hỗ trợ
-              </a>
+              </Link>
             </div>
             <div class="col-lg-3 col-md-6">
               <h5 class="text-light mb-4">Góp ý</h5>
@@ -110,11 +110,11 @@ const Footer = () => {
         <div class="container">
           <div class="copyright">
             <div class="row">
-              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="border-bottom" href="#"></a>EduLuxe, All Right
-                Reserved.
+              <div class="col-md-12 text-center  mb-3 mb-md-0">
+                &copy; <Link class="border-bottom" to="#"></Link>EduLuxe, All
+                Right Reserved.
               </div>
-              <div class="col-md-6 text-center text-md-end"></div>
+              <div class="col-md-6 text-center "></div>
             </div>
           </div>
         </div>

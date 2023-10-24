@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -89,27 +89,27 @@ const Header = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <Link to="/" class="nav-item nav-link active">
+            <NavLink to="/" class="nav-item nav-link active">
               Trang chủ
-            </Link>
-            <Link to="/blog" class="nav-item nav-link">
+            </NavLink>
+            <NavLink to="/blog" class="nav-item nav-link">
               Blog
-            </Link>
-            <Link to="/price" class="nav-item nav-link">
+            </NavLink>
+            <NavLink to="booking1" class="nav-item nav-link">
               Bảng giá
-            </Link>
-            <div class="nav-item dropdown">
-              <Link
-                to="service.html"
+            </NavLink>
+            <div class="nav-item dropdown" style={{ marginTop: "24px" }}>
+              <NavLink
+                to="combo2"
                 class="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
                 Gói dịch vụ
-              </Link>
+              </NavLink>
               <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                <Link to="combo1" class="dropdown-item">
+                <NavLink to="combo1" class="dropdown-item">
                   Dọn dẹp nhà{" "}
-                </Link>
+                </NavLink>
                 {/* <Link to="team.html" class="dropdown-item">
                   Dọn dẹp nhà (gói cố định)
                 </Link>
@@ -119,9 +119,9 @@ const Header = () => {
                 <Link to="testimonial.html" class="dropdown-item">
                   Vệ sinh tủ lạnh
                 </Link> */}
-                <Link to="combo2" class="dropdown-item">
+                <NavLink to="combo2" class="dropdown-item">
                   Giặt giũ
-                </Link>
+                </NavLink>
                 {/* <Link to="404.html" class="dropdown-item">
                   Vệ sinh sofa
                 </Link>
@@ -136,12 +136,12 @@ const Header = () => {
                 </Link> */}
               </div>
             </div>
-            <Link to="/about" class="nav-item nav-link">
+            <NavLink to="/about" class="nav-item nav-link">
               Về chúng tôi
-            </Link>
-            <Link to="contract" class="nav-item nav-link">
+            </NavLink>
+            <NavLink to="contract" class="nav-item nav-link">
               Liên hệ
-            </Link>
+            </NavLink>
           </div>
         </div>
       </nav>

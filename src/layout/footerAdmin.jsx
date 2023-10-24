@@ -11,7 +11,7 @@ const FooterAmin = () => {
         <div className="container">
           <div className="copyright">
             <div className="row">
-              <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              <div className="text-center  mb-3 mb-md-0">
                 &copy; <a className="border-bottom" href="#"></a>EduLuxe, All
                 Right Reserved.
               </div>

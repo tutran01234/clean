@@ -3,6 +3,7 @@ import Header from "../layout/header";
 import Footer from "../layout/footer";
 import BannerSlider from "../component/home/bannerSlide";
 import FeedBackSlider from "../component/home/feedBackSlider";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -61,12 +62,12 @@ const Home = () => {
                 <i class="far fa-check-circle text-primary me-3"></i>Hỗ trợ tận
                 tâm
               </p>
-              <a
+              <Link
                 class="btn btn-primary rounded-pill py-3 px-5 mt-3"
-                href="about.html"
+                to="/about"
               >
                 Chi tiết
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -215,12 +216,12 @@ const Home = () => {
                     giũ drap giường
                   </p>
                 </div>
-                <a
+                <Link
                   class="btn btn-primary rounded-pill py-3 px-5 mt-3"
-                  href="combo1.html"
+                  to="combo1"
                 >
                   Chi tiết
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -250,12 +251,12 @@ const Home = () => {
                     topper(Tấm phủ nệm)
                   </p>
                 </div>
-                <a
+                <Link
                   class="btn btn-primary rounded-pill py-3 px-5 mt-3"
-                  href="combo2.html"
+                  to="combo2"
                 >
                   Chi tiết
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -270,12 +271,12 @@ const Home = () => {
               </div>
               <div class="team-text bg-light text-center p-4">
                 <h5>Vệ sinh máy lạnh</h5>
-                <a
+                <Link
                   class="btn btn-primary rounded-pill py-3 px-5 mt-5"
-                  href="combo2.html"
+                  to="combo2"
                 >
                   Chi tiết
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -410,12 +411,12 @@ const Home = () => {
           </div>
           <FeedBackSlider />
 
-          <a
-            href="#"
+          <Link
+            to="#"
             class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
           >
             <i class="bi bi-arrow-up"></i>
-          </a>
+          </Link>
         </div>
       </div>
     </>
