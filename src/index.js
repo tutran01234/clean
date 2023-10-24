@@ -12,6 +12,7 @@ import Booking1 from "./home/booking1";
 import Booking2 from "./home/booking2";
 import Login from "./home/login";
 import Register from "./home/register";
+import Admin from "./admin/admin";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -28,6 +29,7 @@ root.render(
           <Route path="combo2" element={<Combo2 />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+          <Route path="admin" element={<Admin />} />
         </Route>
       </Routes>
     </BrowserRouter>
