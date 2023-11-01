@@ -122,6 +122,10 @@ const Header = () => {
                 <NavLink to="combo2" class="dropdown-item">
                   Giặt giũ
                 </NavLink>
+                <p style={{ height: "0px", margin: "0" }}></p>
+                <NavLink to="all-service" class="dropdown-item">
+                  Tất cả dịch vụ
+                </NavLink>
                 {/* <Link to="404.html" class="dropdown-item">
                   Vệ sinh sofa
                 </Link>

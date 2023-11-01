@@ -14,6 +14,8 @@ import Login from "./home/login";
 import Register from "./home/register";
 import Admin from "./admin/admin";
 import Manager from "./home/manage.jsx";
+import OderDetail from "./home/oder-detail";
+import AllService from "./home/allService";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -21,6 +23,7 @@ root.render(
       <Routes>
         <Route path="/admin" element={<Admin />} />
         <Route path="/manager" element={<Manager />} />
+        <Route path="/manager/oder-detail" element={<OderDetail />} />
 
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
@@ -33,6 +36,7 @@ root.render(
           <Route path="combo2" element={<Combo2 />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+          <Route path="all-service" element={<AllService />} />
         </Route>
       </Routes>
     </BrowserRouter>

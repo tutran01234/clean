@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Service = () => {
   return (
@@ -58,36 +59,45 @@ const Service = () => {
                   </td>
                   <td>
                     <div className="flex align-items-center list-user-action">
-                      <a
+                      <div
                         className="btn btn-sm btn-dark "
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""
                         data-original-title="Delete"
-                        href="use-add.html"
+                        // to="#"
+                        onClick={() => {
+                          alert("Đã xóa dịch vụ");
+                        }}
                       >
                         <i className=" fa fa-light fa-trash  mr-0 "></i>
-                      </a>
-                      <a
+                      </div>
+                      <Link
                         className="btn btn-sm btn-dark "
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""
                         data-original-title="Edit"
-                        href="use-add.html"
+                        to="#"
+                        onClick={() => {
+                          alert("Sửa dịch vụ");
+                        }}
                       >
                         <i className=" fa fa-light fa-pen-alt  mr-0 "></i>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="btn btn-sm btn-dark "
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""
                         data-original-title="Add"
-                        href="use-add.html"
+                        to="#"
+                        onClick={() => {
+                          alert("...");
+                        }}
                       >
                         <i className=" fa fa-light fa-plus mr-0 "></i>
-                      </a>
+                      </Link>
                     </div>
                   </td>
                 </tr>

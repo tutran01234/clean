@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Order = () => {
   return (
@@ -39,17 +40,19 @@ const Order = () => {
                 <td>2023-07-30</td>
                 <td>Chưa xác nhận</td>
                 <td>
-                  <button
-                    className="button-collapse"
-                    onclick="showDetails(1)"
-                    style={{
-                      fontSize: "14px",
-                      padding: "4px 4px",
-                      borderRadius: "4px",
-                    }}
-                  >
-                    Chi tiết
-                  </button>
+                  <Link to="/manager/oder-detail">
+                    <button
+                      className="button-collapse"
+                      onclick="showDetails(1)"
+                      style={{
+                        fontSize: "14px",
+                        padding: "4px 4px",
+                        borderRadius: "4px",
+                      }}
+                    >
+                      Chi tiết
+                    </button>
+                  </Link>
                 </td>
               </tr>
               <tr>
@@ -59,17 +62,19 @@ const Order = () => {
                 <td>2023-08-15</td>
                 <td>Đã xác nhận</td>
                 <td>
-                  <button
-                    className="button-collapse"
-                    onclick="showDetails(1)"
-                    style={{
-                      fontSize: "14px",
-                      padding: "4px 4px",
-                      borderRadius: "4px",
-                    }}
-                  >
-                    Chi tiết
-                  </button>
+                  <Link to="/manager/oder-detail">
+                    <button
+                      className="button-collapse"
+                      onclick="showDetails(1)"
+                      style={{
+                        fontSize: "14px",
+                        padding: "4px 4px",
+                        borderRadius: "4px",
+                      }}
+                    >
+                      Chi tiết
+                    </button>
+                  </Link>
                 </td>
               </tr>
             </tbody>
